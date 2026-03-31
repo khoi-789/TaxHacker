@@ -51,10 +51,10 @@ export default function Home() {
   const [isCopied, setIsCopied] = useState(false);
 
   const instructions = [
-    "/instructions/Step 1.png",
-    "/instructions/Step 2.png",
-    "/instructions/Step 3.png",
-    "/instructions/Step 4.png",
+    "./instructions/Step 1.png",
+    "./instructions/Step 2.png",
+    "./instructions/Step 3.png",
+    "./instructions/Step 4.png",
   ];
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -337,7 +337,7 @@ export default function Home() {
                           </div>
                         )}
                         <div className="absolute left-0 w-full h-1 bg-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.8)] z-10 animate-[scan_3s_linear_infinite]">
-                           <div className="absolute top-0 left-0 w-full h-100 bg-gradient-to-b from-transparent to-sky-400/20 -translate-y-full" />
+                           <div className="absolute top-0 left-0 w-full h-[150px] bg-gradient-to-t from-sky-400/20 to-transparent translate-y-0" />
                         </div>
                       </div>
                       
