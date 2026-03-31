@@ -229,6 +229,7 @@ export default function Home() {
                       <option value="hapharco">🏥 Hãng HAPHARCO (Dược Hà Nội)</option>
                       <option value="sang_pharma">🏥 Hãng SANG PHARMA</option>
                       <option value="maxxcare">🏥 Hãng MEGA (MAXXCARE)</option>
+                      <option value="astrazeneca">🏥 Hãng AZ (AstraZeneca)</option>
                     </select>
                   </div>
                 </div>
