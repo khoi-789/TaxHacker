@@ -224,10 +224,11 @@ export default function Home() {
                       className="w-full pl-11 pr-4 py-3 rounded-xl border border-sky-100 bg-white focus:ring-2 focus:ring-sky-400 outline-none transition-all text-sm font-bold appearance-none cursor-pointer text-slate-700"
                     >
                       <option value="DEFAULT">🤖 Tự động nhận diện</option>
-                      <option value="SANOFI">🏥 Hãng SANOFI</option>
-                      <option value="DAVIPHARM">🏥 Hãng DAVIPHARM (Đạt Vi Phú)</option>
-                      <option value="HAPHARCO">🏥 Hãng HAPHARCO (Dược Hà Nội)</option>
-                      <option value="SANG_PHARMA">🏥 Hãng SANG PHARMA</option>
+                      <option value="sanofi">🏥 Hãng SANOFI</option>
+                      <option value="davipharm">🏥 Hãng DAVIPHARM (Đạt Vi Phú)</option>
+                      <option value="hapharco">🏥 Hãng HAPHARCO (Dược Hà Nội)</option>
+                      <option value="sang_pharma">🏥 Hãng SANG PHARMA</option>
+                      <option value="maxxcare">🏥 Hãng MEGA (MAXXCARE)</option>
                     </select>
                   </div>
                 </div>
