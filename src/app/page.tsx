@@ -51,10 +51,10 @@ export default function Home() {
   const [isCopied, setIsCopied] = useState(false);
 
   const instructions = [
-    "./instructions/Step 1.png",
-    "./instructions/Step 2.png",
-    "./instructions/Step 3.png",
-    "./instructions/Step 4.png",
+    "https://drive.google.com/uc?id=1nqUP8HZ0IfMtZXHeu8Y92M5RNa5jaxEC",
+    "https://drive.google.com/uc?id=1CVRG--N4Zfki4y_VmYTmRdw7Y32O7Qrc",
+    "https://drive.google.com/uc?id=1wm0MJIPUAyV3H80gw_OK0QLZWA5Au6eP",
+    "https://drive.google.com/uc?id=1xg44PINLqyRq5AI2Dt2Yp8OT_ytSXO84",
   ];
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
