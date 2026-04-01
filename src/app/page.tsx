@@ -379,26 +379,31 @@ export default function Home() {
                               <span className="text-xs font-black text-sky-500 uppercase tracking-widest underline decoration-sky-200 decoration-2 underline-offset-4">Ngày HĐ:</span>
                               <span className="text-base font-bold text-slate-600">{result.date || "---"}</span>
                            </div>
-                           <div className="ml-auto flex items-center gap-2">
-                              <button 
-                                onClick={() => { playSound("pop"); handleCopyTable(); }}
-                                className={cn(
-                                  "flex items-center justify-center p-2 rounded-xl transition-all duration-100 shadow-[0_4px_0_rgb(186,230,253)] hover:shadow-[0_2px_0_rgb(186,230,253)] active:shadow-none active:translate-y-[4px]",
-                                  isCopied ? "bg-emerald-500 text-white shadow-[0_4px_0_rgb(16,185,129)]" : "bg-white border border-sky-100 text-sky-500 hover:bg-sky-50"
-                                )}
-                                title="Copy to Excel"
-                              >
-                                {isCopied ? <CheckCircle2 className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-                              </button>
-
-                              <button 
-                                onClick={() => { playSound("pop"); handleDownloadCSV(); }}
-                                className="flex items-center gap-1.5 px-6 py-2 bg-sky-500 text-white text-[12px] font-black rounded-2xl transition-all duration-100 shadow-[0_4px_0_rgb(14,165,233)] hover:shadow-[0_2px_0_rgb(14,165,233)] active:shadow-none active:translate-y-[4px] hover:bg-sky-600"
-                              >
-                                <Download className="w-4 h-4" />
-                                XUẤT CSV
-                              </button>
-                           </div>
+                         <div className="ml-auto flex flex-col items-end gap-2">
+                            <p className="text-[11px] font-medium text-amber-700 italic pr-1">
+                              * Bảng dữ liệu giúp điền nhanh, vui lòng kiểm tra lại độ chính xác.
+                            </p>
+                            <div className="flex items-center gap-2">
+                               <button 
+                                 onClick={() => { playSound("pop"); handleCopyTable(); }}
+                                 className={cn(
+                                   "flex items-center justify-center p-2 rounded-xl transition-all duration-100 shadow-[0_4px_0_rgb(186,230,253)] hover:shadow-[0_2px_0_rgb(186,230,253)] active:shadow-none active:translate-y-[4px]",
+                                   isCopied ? "bg-emerald-500 text-white shadow-[0_4px_0_rgb(16,185,129)]" : "bg-white border border-sky-100 text-sky-500 hover:bg-sky-50"
+                                 )}
+                                 title="Copy to Excel"
+                               >
+                                 {isCopied ? <CheckCircle2 className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
+                               </button>
+ 
+                               <button 
+                                 onClick={() => { playSound("pop"); handleDownloadCSV(); }}
+                                 className="flex items-center gap-1.5 px-6 py-2 bg-sky-500 text-white text-[12px] font-black rounded-2xl transition-all duration-100 shadow-[0_4px_0_rgb(14,165,233)] hover:shadow-[0_2px_0_rgb(14,165,233)] active:shadow-none active:translate-y-[4px] hover:bg-sky-600"
+                               >
+                                 <Download className="w-4 h-4" />
+                                 XUẤT CSV
+                               </button>
+                            </div>
+                         </div>
                         </div>
                       </div>
 
