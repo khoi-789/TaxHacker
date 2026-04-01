@@ -381,7 +381,7 @@ export default function Home() {
                            </div>
                          <div className="ml-auto flex flex-col items-end gap-2">
                             <p className="text-[11px] font-medium text-amber-700 italic pr-1">
-                              * Bảng dữ liệu giúp điền nhanh, vui lòng kiểm tra lại độ chính xác.
+                              * Bảng dữ liệu giúp nhập liệu nhanh, vui lòng kiểm tra lại độ chính xác.
                             </p>
                             <div className="flex items-center gap-2">
                                <button 
